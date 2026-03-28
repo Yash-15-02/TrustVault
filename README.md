@@ -193,8 +193,4 @@ TrustVault/
 │   └── .env.example
 ├── mobile-app/README.md
 └── .gitignore
-```
 
-## License
-
-MIT
