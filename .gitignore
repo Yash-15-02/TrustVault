@@ -1,0 +1,35 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Trained models (large binary files)
+*.pkl
+
+# Data files (generated, not source)
+backend/data/trained_models/
+backend/data/processed/
+backend/data/experiments/
+backend/data/alerts/
+backend/data/raw/sms_spam.csv
+backend/data/raw/creditcard.csv
+
+# Database
+*.db
+
+# Environment
+.env
+
+# IDE / OS
+.pytest_cache/
+.mypy_cache/
+.vscode/
+.idea/
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
