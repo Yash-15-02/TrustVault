@@ -1,21 +1,50 @@
-# TrustVault (React Native)
+# Welcome to your Expo app 👋
 
-Use the same JSON API as the web demo:
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-- `POST /analyze` on your backend (e.g. `http://<LAN-IP>:5000/analyze` from a device)
-- `GET /health`
+## Get started
 
-Example body:
+1. Install dependencies
 
-```json
-{
-  "amount": 50000,
-  "is_new_receiver": 1,
-  "transactions_today": 1,
-  "message": "Your OTP is 123456"
-}
+   ```bash
+   npm install
+   ```
+
+2. Start the app
+
+   ```bash
+   npx expo start
+   ```
+
+In the output, you'll find options to open the app in a
+
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+
+## Get a fresh project
+
+When you're ready, run:
+
+```bash
+npm run reset-project
 ```
 
-When `alert` is non-null or `delay_transaction` is true, show a full-screen warning and optional countdown before allowing "proceed anyway".
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-Create the app with `npx create-expo-app` or `npx @react-native-community/cli init`, add `axios` or `fetch`, and point `baseURL` at your machine's IP (not `localhost` on physical devices).
+## Learn more
+
+To learn more about developing your project with Expo, look at the following resources:
+
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+
+## Join the community
+
+Join our community of developers creating universal apps.
+
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.

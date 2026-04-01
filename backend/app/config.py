@@ -38,6 +38,8 @@ if _raw_keys:
         if ":" in pair:
             name, key = pair.split(":", 1)
             API_KEYS[key.strip()] = name.strip()
+AUTH_SECRET = os.getenv("AUTH_SECRET", "trustvault-dev-secret")
+ACCESS_TOKEN_TTL_MIN = int(os.getenv("ACCESS_TOKEN_TTL_MIN", "1440"))
 
 # ── Transaction model tuning ────────────────────────────────────────────
 TXN_HIGH_PROB = float(os.getenv("TXN_HIGH_PROB", "0.65"))
